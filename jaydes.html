@@ -1,0 +1,181 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jayd's Apparels</title>
+
+    <link rel ="stylesheet" href="jaystyles.css">
+
+    <script src="jay.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="lady.PNG" class="logo"></a>
+            <div class="nav-links" id="navLinks">  
+                <i class="fa fa-times" onclick="hideMenu()"></i> 
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Feedback</a></li>
+                    <li><a href="">Contact</a></li>   
+                </ul>
+            </div>
+            <i class="fa fa-times" onclick="showMenu()"></i>
+ 
+        </nav>
+
+        <div class="text-box">
+            <h1> Jayd's Apparels</h1>
+            <p>Jayd's is the sure destination for dressing in a manner that compliments, accentuates and beautifies you.<br> Enhancing your confidence through augmenting your beauty is our purpose. Achieving your dream look is our north.</p>
+
+            <a href="" class="btn">Reach Out To Know More</a>
+        </div>
+    </section>
+
+    <section class="services">
+        <h1>Services We Offer</h1>
+        <p>Fabric Design, Fitting, Accessorising, Make-up, Gele Tying, Henna Decoration, Perfumery.</p>
+
+        <div class="row">
+            <div class="services-col">
+                <h3> Fabric Design</h3>
+                <p>We offer varying designs and styles which include: Bubus, Abuja Bubus, straight gowns, fitted gowns, flay gowns, pallazo trousers, pallazo skirts, tops, polka dot designs, chiffon and various material gowns.</p>
+            </div>
+
+            <div class="services-col">
+                <h3> Gele Tying</h3>
+                <p>We have experts in the art of gele tying who have a lot experience and various styles in their repertoire for you to choose from.</p>
+            </div>
+
+            <div class="services-col">
+                <h3> Accessorising</h3>
+                <p>Jayd's has a wide variety of beaded jewellery, bangles, bracelets, necklaces and beaded bags to give you that uniquely Jayd look.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="location">
+        <h1> Find Us At</h1>
+        <p>You can find our outlets at: Liberia Road, Malali. Coke Village, Bayero University, Kano. Malumfashi and Dutsin-Ma Katsina.</p>
+        
+        <div class="row">
+            <div class="location-col">
+                <img src="thread.jpg">
+                <div class="layer">
+                    <h3>JAYD'S</h3>
+                </div>
+            </div>
+
+            <div class="location-col">
+                <img src="rack.jpg">
+                <div class="layer">
+                    <h3>Gowns of All Types</h3>
+                </div>
+            </div>
+
+            <div class="location-col"> 
+                <img src="img.PNG">
+                <div class="layer">
+                    <h3>Fabulous You</h3>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="facilities">
+        <h1>Our Catalog</h1>
+        <p>Visit our online stores to windowshop through our catalog.</p>
+    <div class="row">
+        <div class="facilities-col">
+            <img src="glass.jpg">
+            <h3>Your Beauty Is Our North</h3>
+            <p>Feel free to reach us with any queries, questions and suggestions you may have. At Jayd's, your feedback is golden.</p>
+        </div>
+
+        <div class="facilities-col">
+            <img src="ramonda.jpg ">
+            <h3>You May Call Anytime</h3>
+            <p>Visit any of our facilities at all hours of the day.</p>
+        </div>
+    </div>
+    </section>
+
+    <section class="testimonials">
+        <h1>What Our Customers Say</h1>
+        <p>I've always hated it when my tailor would argue with me about what I want. At Jayd's there are no arguments, just people who really know fashion</p>
+    </section>
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Jayd's is a fashion brand that is founded on the principle that women don't have to compromise modesty to look beautiful.</p>
+        <div class="icons">
+            <i class = "fa fa-facebook"></i>
+            <i class = "fa fa-twitter"></i>
+            <i class = "fa fa-instagram"></i>
+            <i class = "fa fa-linkedIn"></i>
+        </div>
+    </section>
+
+    <div class="pagination">
+        <button class="btn1">prev</button>
+        <ul>
+            <li class="link" id = "active" value="1" onclick="activeLink()">1</li>
+            <li class="link" value="2" onclick="activeLink()">2</li>
+            <li class="link" value="3" onclick="activeLink()">3</li>
+            <li class="link" value="4" onclick="activeLink()">4</li>
+        
+        </ul>
+        <button class="btn2">next</button>
+    </div>
+
+    <script>
+         let link = document.getElementsByClassName("link"); 
+         
+         let currentValue = 1; 
+         
+         function activeLink(){ 
+            for (l of link){
+            l.classList,remove("active");
+} 
+event.target.classList.add("active");
+currentValue = event.target.value;
+}
+    </script>
+
+   </body>
+</html>
+
+
+<!-- <header>
+   <nav class="navigate">
+    <div class="container">
+        <a href="#" class="sidenav-trigger" data-target = "mobile"><i class="material-icons"></i></a>
+
+
+        <ul class="right">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Feedback</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <ul class="sidenav grey darken-4 center" id="mobile">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Feedback</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+   </nav>
+</header> -->
